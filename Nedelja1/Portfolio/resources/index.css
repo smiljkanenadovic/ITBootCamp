@@ -1,0 +1,233 @@
+/*Master styles*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0px;
+    font-family: "Lato", sans-serif;  
+    background-color: #f2f2f2;
+    padding-top: 65px;     
+}
+html {
+    font-size: 62.5%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1f;
+}
+
+/*Nav style*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    background-color: #333;
+}
+header {
+    position: fixed;
+    top:0;
+    width: 100%;   
+}
+.left-side {
+    display: flex;  
+}
+.right-side {
+    font-size: 1.8rem;
+    color: #888;    
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;    
+}
+.nav-link-wrapper {
+    height: 22px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.5s;
+    font-size: 1.8rem;
+}
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid #e67e22; 
+    padding-bottom: 1px;
+}
+.heading-primary {
+    font-size: 3.6rem;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 6rem;
+    margin-top: 6rem; 
+    color:#555555;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.heading-primary:after {
+    display: block;
+    height: 0.15rem;
+    background-color: #e67e22;
+    content: "";
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.heading-secondary {
+    color: #555555;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+}
+
+/* About */
+.main-text {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#555555;   
+    font-weight: 300; 
+}
+.two-column-wrapper {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 38px;
+}
+.profile-image-wrapper img {
+   width: 100%;
+}
+.profile-content-wrapper {
+    padding: 30px;
+}
+.btn {
+    display:inline-block;
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 20rem; 
+    border: none;
+    background-color: #e67e22;
+    color:#fff;
+    margin-top: 2rem;  
+    font-size: 1.6rem;        
+}
+.btn:hover {
+    background-color: #cf6d17;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+/*Portfolio*/
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper {
+    position: relative;
+}
+.portfolio-img-background {
+    height: 35rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.img-text-wrapper .subtitle {
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: 1s;    
+    color: transparent;    
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Contact*/ 
+.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;    
+    width: 44%;
+    margin: auto;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}  
+label {
+      font-size: 1.4rem;
+} 
+input[type=submit] {
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 3rem;
+    border: none; 
+    cursor: pointer;
+    border-radius: 20rem;
+    background-color: #e67e22;
+}
+*:focus{outline: none;} /*erase chrome default black-border*/
+  
+input[type=submit]:hover {
+    background-color: #cf6d17;    
+}
+input.focus, input:focus {
+    outline: 0;
+    box-shadow: none!important;
+} 
+
+/*Footer*/
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 1.6rem;
+    color:#888; 
+    margin-top: 6rem;
+}          
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.left-footer li a {    
+    text-decoration: none;
+    padding-right: 18px;
+    color:#888;
+    height: 22px; 
+}
+.left-footer li a:hover {
+    color:#ffff;
+}
